@@ -1,0 +1,7 @@
+2026-03-02 15:26:18,859 - INFO - ACTION: USER MESSAGE RECEIVED | DETAILS: Thread: 6285220999 | Input: my name is alice
+2026-03-02 15:26:22,920 - INFO - ACTION: LLM DECIDED TOOL USE | DETAILS: Tool: search_customer_db
+2026-03-02 15:26:22,935 - INFO - TOOL USE: search_customer_db | ARGS: {'query': 'alice'} | RESULT: [{'id': 101, 'name': 'Alice Smith', 'email': 'alice@example.com', 'plan': 'Premium', 'status': 'Active'}]...
+2026-03-02 15:26:26,401 - INFO - ACTION: LLM DECIDED TOOL USE | DETAILS: Tool: get_customer_details
+2026-03-02 15:26:26,410 - INFO - TOOL USE: get_customer_details | ARGS: {'customer_id': 101} | RESULT: {'id': 101, 'name': 'Alice Smith', 'email': 'alice@example.com', 'plan': 'Premium', 'status': 'Active'}...
+2026-03-02 15:26:30,045 - INFO - ACTION: LLM REPLIED DIRECTLY | DETAILS: 
+2026-03-02 15:26:30,048 - INFO - ACTION: AGENT RESPONSE GENERATED | DETAILS: Output length: 117
