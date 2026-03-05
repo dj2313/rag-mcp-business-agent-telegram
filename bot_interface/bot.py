@@ -167,7 +167,7 @@ application = None
 def setup_bot():
     global application
     if not TOKEN or TOKEN == "your_telegram_bot_token_here":
-        print("Error: TELEGRAM_BOT_TOKEN not found in .env")
+        print("Error: TELEGRAM_BOT_TOKEN not found in Environment Variables")
         return None
         
     application = ApplicationBuilder().token(TOKEN).build()

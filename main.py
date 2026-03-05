@@ -12,11 +12,11 @@ if __name__ == "__main__":
     
     # Check for keys
     if not os.getenv("TELEGRAM_BOT_TOKEN") or os.getenv("TELEGRAM_BOT_TOKEN") == "your_telegram_bot_token_here":
-        print("CRITICAL: TELEGRAM_BOT_TOKEN not set in .env")
+        print("CRITICAL: TELEGRAM_BOT_TOKEN environment variable not set")
         sys.exit(1)
         
     if not os.getenv("GROQ_API_KEY") or os.getenv("GROQ_API_KEY") == "your_groq_api_key_here":
-        print("WARNING: GROQ_API_KEY not set. LLM features will fail.")
+        print("WARNING: GROQ_API_KEY environment variable not set. LLM features will fail.")
 
     print("--- 🤖 RAG + MCP Business Agent Starting ---")
     
