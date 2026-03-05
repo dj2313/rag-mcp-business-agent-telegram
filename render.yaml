@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: telegram-rag-mcp-agent
+    runtime: docker
+    plan: free # Note: Free tier has 512MB RAM. If ingestion fails, consider a paid plan.
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GMAIL_SENDER
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
